@@ -70,39 +70,56 @@
 
 
 
-// Övning 2
+// // Övning 2
 
-class account {
-    constructor(name, age, amountOnAccount) {
-        this.name = name;
-        this.age = age;
-        this.amountOnAccount = amountOnAccount;
+// class account {
+//     constructor(name, age, amountOnAccount) {
+//         this.name = name;
+//         this.age = age;
+//         this.amountOnAccount = amountOnAccount;
+//     }
+
+//     depositAccount(deposit) {
+//         console.log(`Tjena ${this.name}, summan du hade från början är ${this.amountOnAccount} kronor. Nu satte du in ${deposit}, så nu har du ${this.amountOnAccount+deposit}, fett va?`
+//         )
+//     }
+
+
+//     withdrawAccount(withdraw){
+//         console.log (`Tjaaaaa ${this.name}, Nu har du tagit ut ${withdraw} kronor från ditt konto som från början hade ${this.amountOnAccount}. Så nu har du ${this.amountOnAccount-withdraw} kvar... Ändå rätt OK väl??`)
+//         this.amountOnAccount-withdraw
+//     }
+
+//     showSaldoAccount(showSaldo){
+//         console.log(`Yo yo mannen ${this.name}!! På ditt konto så har du ${this.amountOnAccount} kronor. Jeflar vad med pengar!!!`)
+//     }
+
+// }
+
+// const bennyAccount = new account('Benny', 25, 5000);
+// const claraAccount = new account('Clara', 26, 2000);
+
+
+
+
+// bennyAccount.depositAccount(2000);
+// claraAccount.depositAccount(1000);
+// bennyAccount.withdrawAccount(2000);
+// bennyAccount.showSaldoAccount();
+
+
+//Övning 3
+
+class card {
+    constructor(number, suit){
+        this.number = number
+        this.suit = suit
     }
-
-    depositAccount(deposit) {
-        console.log(`Tjena ${this.name}, summan du hade från början är ${this.amountOnAccount} kronor. Nu satte du in ${deposit}, så nu har du ${this.amountOnAccount+deposit}, fett va?`
-        )
+    logCard(){
+        console.log(`Tjena mannen, du skapade precis ${this.suit} ${this.number}, coolt väl?`)
     }
-
-
-    withdrawAccount(withdraw){
-        console.log (`Tjaaaaa ${this.name}, Nu har du tagit ut ${withdraw} kronor från ditt konto som från början hade ${this.amountOnAccount}. Så nu har du ${this.amountOnAccount-withdraw} kvar... Ändå rätt OK väl??`)
-        this.amountOnAccount-withdraw
-    }
-
-    showSaldoAccount(showSaldo){
-        console.log(`Yo yo mannen ${this.name}!! På ditt konto så har du ${this.amountOnAccount} kronor. Jeflar vad med pengar!!!`)
-    }
-
 }
-
-const bennyAccount = new account('Benny', 25, 5000);
-const claraAccount = new account('Clara', 26, 2000);
+const newCard = new card('Ess', 'Klöver')
 
 
-
-
-bennyAccount.depositAccount(2000);
-claraAccount.depositAccount(1000);
-bennyAccount.withdrawAccount(2000);
-bennyAccount.showSaldoAccount();
+newCard.logCard();
