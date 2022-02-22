@@ -44,3 +44,27 @@
 // ivy.presentation();
 
 
+//Övning1
+
+class pets {
+    constructor(race, name, color, stupid) {
+        this.race = race;
+        this.name = name;
+        this.color = color;
+        this.stupid = stupid;
+    }
+
+    presentation() {
+        console.log(`${this.name} är en ${this.stupid} ${this.color} ${this.race} som heter ${this.name}, så det så!`);
+    }
+
+}
+
+const katt = new pets ('katt', 'Bengt', 'gul', 'korkad')
+const hund = new pets ('hund', 'Britta', 'svart', 'rolig')
+const birdie = new pets ('fågel', 'Piip', 'grön', 'tokig')
+
+katt.presentation();
+hund.presentation();
+birdie.presentation();
+
