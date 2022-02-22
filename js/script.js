@@ -46,25 +46,56 @@
 
 //Övning1
 
-class pets {
-    constructor(race, name, color, stupid) {
-        this.race = race;
-        this.name = name;
-        this.color = color;
-        this.stupid = stupid;
+// class pets {
+//     constructor(race, name, color, stupid) {
+//         this.race = race;
+//         this.name = name;
+//         this.color = color;
+//         this.stupid = stupid;
+//     }
+
+//     presentation() {
+//         console.log(`${this.name} är en ${this.stupid} ${this.color} ${this.race} som heter ${this.name}, så det så!`);
+//     }
+
+// }
+
+// const katt = new pets ('katt', 'Bengt', 'gul', 'korkad')
+// const hund = new pets ('hund', 'Britta', 'svart', 'rolig')
+// const birdie = new pets ('fågel', 'Piip', 'grön', 'tokig')
+
+// katt.presentation();
+// hund.presentation();
+// birdie.presentation();
+
+
+
+// Övning 2
+
+class account {
+    constructor(name, age, amountOnAccount){
+        this.name=name;
+        this.age=age;
+        this.amountOnAccount=amountOnAccount;
     }
 
-    presentation() {
-        console.log(`${this.name} är en ${this.stupid} ${this.color} ${this.race} som heter ${this.name}, så det så!`);
+    depositAccount(deposit){
+        return this.amountOnAccount+deposit
+        console.log('Så här mycket pengar har du tjänat din jävel!!!')
+
     }
 
+
+    withdrawAccount(withdraw){
+        this.amountOnAccount-withdraw
+    }
+    showSaldoAccount(showSaldo){
+
+    }
+     
 }
 
-const katt = new pets ('katt', 'Bengt', 'gul', 'korkad')
-const hund = new pets ('hund', 'Britta', 'svart', 'rolig')
-const birdie = new pets ('fågel', 'Piip', 'grön', 'tokig')
+const bennyAccount = new account ('Benny', 25, 5000);
+const claraAccount = new account ('Clara', 26, 2000)
 
-katt.presentation();
-hund.presentation();
-birdie.presentation();
-
+bennyAccount.depositAccount(5000, 2000);
