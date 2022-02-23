@@ -110,16 +110,16 @@
 
 //Övning 3
 
-class card {
-    constructor(number, suit){
-        this.number = number
-        this.suit = suit
-    }
-    logCard(){
-        console.log(`Tjena mannen, du skapade precis ${this.suit} ${this.number}, coolt väl?`)
-    }
-}
-const newCard = new card('Ess', 'Klöver')
+// class card {
+//     constructor(number, suit){
+//         this.number = number
+//         this.suit = suit
+//     }
+//     logCard(){
+//         console.log(`Tjena mannen, du skapade precis ${this.suit} ${this.number}, coolt väl?`)
+//     }
+// }
+// const newCard = new card('Ess', 'Klöver')
 
 
-newCard.logCard();
+// newCard.logCard();
